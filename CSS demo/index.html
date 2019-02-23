@@ -1,0 +1,267 @@
+<html>
+<head>
+    <title>Big Road: Simplist's solution to a mobile-only web story</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0">
+    <style>
+        /* Inspired by: http://embedresponsively.com/ */
+        
+        responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        ratio-1-to-1 responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 100%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        ratio-4-to-3 responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 100%;
+            height: 8;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        responsive-block iframe,
+        responsive-block object,
+        responsive-block embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #333;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        
+        figure {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        figure figcaption {
+            display: block;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-size: 0.85em;
+        }
+        
+        h1 {
+            color:black;
+        }
+        
+        
+        h2 {
+            border-bottom: 1px solid #ccc;
+            margin-top: 2em;
+            color:black;
+        }
+        
+        cover-image {
+            display: block;
+            position: relative;
+        }
+        
+        cover-image h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            color: #eee;
+            text-align: center;
+        }
+        
+        cover-image author-block {
+            position: absolute;
+            bottom: 1em;
+            left: 0;
+            right: 0;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            opacity: 0.6;
+            background-color: white;
+        }
+        
+        code {
+            margin: 0;
+            max-width: 100%;
+            word-break: break-all;
+            font-family: monospace;
+        }
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+      </style>
+</head>
+
+<body>
+    <cover-image>
+        <img src="images/Chinese_large_orbital_station.png" alt="cover photo">
+        <h1>
+            Investors See Stars in China’s Space Startups
+        </h1>
+        <author-block>
+            <em>By</em>
+            <br>
+            <strong>
+                Pili Hu, Howard Liu, VSCode and GitHub
+            </strong>
+        </author-block>
+    </cover-image>
+
+    <p>Landspace is among a growing number of private companies in China to make foray into space tech, an ambition fuelled by U.S. company SpaceX’s success, as well as a shift in China’s space policies over the last few years as Beijing has sought to bring in the private sector to help it gain an edge in space technology.</p>
+
+  
+      
+          
+    </ul>
+
+    <h2> Notes </h2>
+
+    <p>Before we start:</p>
+
+    <ol>
+        <li>This website is modified for the course JOUR2106</li>
+        <li>
+            The original web story is available at <a href="//www.caixinglobal.com/2018-09-28/investors-see-stars-in-chinas-space-startups-101331081.html">investors-see-stars-in-chinas-space-startups</a>. 
+        </li>
+    </ol>
+
+      <h2> Getting started </h2>
+
+    <p>
+        Some private space companies in China:
+    </p>
+
+    <ul>
+        <li>
+            <strong>Landspace</strong> -- 2015
+        </li>
+        <li>
+            <strong>Onespace</strong> -- 2015
+        </li>
+        <li>
+            <strong>iSpace</strong> -- 2016
+        </li>
+    
+    
+    
+    
+
+
+    <h3>Start from <em>Landspace</em> </h3>
+
+    
+        
+    <figure>
+        <img src="images/Zhuque-1.jpg" alt="">
+        <figcaption>
+            <em> The Zhuque-1 (ZQ-1), is a Chinese commercial launch vehicle developed by space tech startup LandSpace. </em>
+            <br> Photo: LandSpace
+        </figcaption>
+    </figure>
+        
+        <p>In just three years, Landspace, a private Chinese space technology research firm, has raised more than 500 million yuan ($73 million), a staggering amount for a startup, with more funding likely on the way to fuel future growth.</p>
+        <p>The Beijing-based firm has grown into a company with more than 200 employees, up from dozens three years ago, according to Zhang Changwu, Landspace’s founder and CEO.</p>
+        <p>“With the government’s support and rising demand for space technology, this may be the best time for private space companies to invest,” Zhang said.</p>
+
+    <responsive-block>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sd-GBymrtqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </responsive-block>
+        
+         <p>A Beijing-based fund manager with investments in several private space technology firms, who declined to be named, said that private companies could thrive in launching small, low-orbit satellites that are used primarily for navigation, communication and Earth observation. This is because big state-run space technology companies are less competitive in terms of cost-effectiveness. However, he warned of a potential investment bubble. “For example, I know that a company originally planned to launch 24 to 36 satellites this year, but they actually only launched five or six satellites, indicating a big gap between demand and supply,” the investor said.</p>
+
+
+    <figure>
+        <img src="images/Chongqing.jpg" alt="">
+        <figcaption>
+            <em> The Chongqing Liangjiang Star rocket gets prepped for launch on May 17 in northwestern China. </em>
+            <br> Photo: LandSpace
+        </figcaption>
+        
+    </figure>
+
+        <p>In the United States the government works closely with private firms, including United Launch Alliance (ULA), a joint venture of Lockheed Martin Space Systems, in developing space technologies. In contrast, China’s space program, dominated by the two state-owned players, China Aerospace Science & Technology Corp. and China Aerospace Science & Industry Corp., is often shrouded in secrecy.</p>
+
+        <p>Although it seems that China’s private rocket market is growing rapidly, it remains in doubt whether private companies are able to develop their own carrier rockets, such as those that haul satellites into space. Instead, many including iSpace are only capable of developing sounding rockets — those designed only to collect scientific data and conduct engineering tests, a capability China has had since the 1950s, according to the expert.</p>
+
+        <p>Zhang from Landspace sees the business going far beyond sounding rockets, for which he holds a dim view. “Landspace will never develop a sounding rocket,” he said. “If my company ever had to develop a sounding rocket, my team would have left.”</p>
+    
+    <ratio-4-to-3>
+    <responsive-block>
+        <iframe width="400" height="1200" src='//infogram.com/hahaha-1h8j4xnox3gp2mv?live frameborder='0'' allowfullscreen>
+        </iframe>
+    </responsive-block>
+    </ratio-4-to-3>
+
+        
+        
+   
+
+   
+<footer>
+  <p>Posted by: Howard Liu</p>
+  <p>Contact information: <a href="//datavis.studio">
+  DataJ 2019</a>.</p>
+</footer>
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+     
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37311363-17"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-37311363-17');
+    </script>
+
+</body>
+
+</html>
