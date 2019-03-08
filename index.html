@@ -77,20 +77,24 @@
             margin-right: auto;
         }
         
-        .profile1 {
-            background-position: center;
-            width: auto;
-            height: auto;
-        }
-        
         img.resize1 {
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
         }
         
-        .profile2 {
-            background-color: blueviolet;
-            margin: 2px;
+        img.resize2 {
+            width: 50px;
+            height: 50px;
+        }
+        
+        img.resize3 {
+            width: 50px;
+            height: 50px;
+        }
+        
+        img.resize4 {
+            width: 50px;
+            height: 50px;
         }
         
         @media (min-width: 800px) {
@@ -99,16 +103,22 @@
                 grid-template-columns: 1fr 4fr 1fr;
                 grid-template-rows: auto;
                 grid-template-areas: /* prettier-ignore */
-                "p1 hs p2"
+                "hs r1 r2 r3 r4"
             }
             .headshot {
                 grid-area: hs;
             }
-            .profile1 {
-                grid-area: p1;
+            .resize1 {
+                grid-area: r1;
             }
-            .profile2 {
-                grid-area: p2;
+            .resize2 {
+                grid-area: r2;
+            }
+            .resize3 {
+                grid-area: r3;
+            }
+            .resize4 {
+                grid-area: r4;
             }
         }
         
@@ -118,18 +128,28 @@
                 grid-template-columns: 2fr 1fr;
                 grid-template-rows: auto;
                 grid-template-areas: /* prettier-ignore */
-                "hs p1"
+                "hs r1"
                 /* prettier-ignore */
-                "hs p2";
+                "hs r2"
+                /* prettier-ignore */
+                "hs r3"
+                /* prettier-ignore */
+                "hs r4";
             }
             .headshot {
                 grid-area: hs;
             }
-            .profile1 {
-                grid-area: p1;
+            .resize1 {
+                grid-area: r1;
             }
-            .profile2 {
-                grid-area: p2;
+            .resize2 {
+                grid-area: r2;
+            }
+            .resize3 {
+                grid-area: r3;
+            }
+            .resize4 {
+                grid-area: r4;
             }
         }
         
@@ -180,8 +200,11 @@
 
     <div id="begin">
         <div class="headshot">headshot</div>
-        <div class="resize1"><img src="https://dragonmasterhk.github.io/images/IMG_3099.png"></div>
-        <div class="resize1"><img src="https://dragonmasterhk.github.io/images/IMG_111.png"></div>
+        <div class="resize1"><img src="https://dragonmasterhk.github.io/images/IMG_3000.png"></div>
+        <div class="resize2"><img src="https://dragonmasterhk.github.io/images/IMG_3099.png"></div>
+        <div class="resize3"><img src="https://dragonmasterhk.github.io/images/b12950949c.png"></div>
+        <div class="resize4"><img src="https://dragonmasterhk.github.io/images/IMG_3014.png"></div>
+
     </div>
 
     <div class="container">
