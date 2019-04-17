@@ -24,24 +24,24 @@
 
 
     <script type="text/javascript">
-        $.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/world-population.json', function(data) {
+        // Prepare random data
+        var data = [
+            ['Hong Kong Island', 728],
+            ['Kowloon', 710],
+            ['New T', 963],
 
+        ];
+
+        $.getJSON('map-2.geojason', function(geojson) {
+
+            // Initiate the chart
             Highcharts.mapChart('container', {
                 chart: {
-                    borderWidth: 1,
-                    map: 'custom/world'
+                    map: geojson
                 },
 
                 title: {
-                    text: 'World population 2013 by country'
-                },
-
-                subtitle: {
-                    text: 'Demo of Highcharts map with bubbles'
-                },
-
-                legend: {
-                    enabled: false
+                    text: 'GeoJSON in Highmaps'
                 },
 
                 mapNavigation: {
@@ -51,19 +51,23 @@
                     }
                 },
 
+                colorAxis: {
+                    tickPixelInterval: 100
+                },
+
                 series: [{
-                    name: 'Countries',
-                    color: '#E0E0E0',
-                    enableMouseTracking: false
-                }, {
-                    type: 'mapbubble',
-                    name: 'Population 2016',
-                    joinBy: ['iso-a3', 'code3'],
                     data: data,
-                    minSize: 4,
-                    maxSize: '12%',
-                    tooltip: {
-                        pointFormat: '{point.properties.hc-a2}: {point.z} thousands'
+                    keys: ['code_hasc', 'value'],
+                    joinBy: 'code_hasc',
+                    name: 'Random data',
+                    states: {
+                        hover: {
+                            color: '#a4edba'
+                        }
+                    },
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.properties.postal}'
                     }
                 }]
             });
