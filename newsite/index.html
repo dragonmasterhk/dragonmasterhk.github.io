@@ -647,6 +647,9 @@
     </div>
     <!--================ End Quiz Page =================-->
     <!--================ Start Educational Level Chart 1 =================-->
+    <h> In Hong Kong, Women appear to have lower level of educational attainment than men. This is because older generation women generally had a smaller chance of receiving education when they were young. Among the female population aged 15 and over in 2017,
+        79.0% had attended secondary education and above, as against 85.1% for their male counterparts. The corresponding proportions for women and men in 1986 were 50.0% and 61.0% respectively. Along with the increase in educational opportunities for
+        women, the difference in educational attainment between women and men had gradually narrowed in the past 3 decades. </h>
     <div id="container991" style="min-width: 400px; max-width: 600px; height: 400px; margin: 0 auto"></div>
 
     <script src="Highcharts-7.1.1/code/highcharts.js"></script>
@@ -789,7 +792,155 @@
 
         });
     </script>
+    <!--================ End Educational Level Chart 1 =================-->
+    <!--================ Start Educational Level Chart 2 =================-->
+    <div id="container998" style="min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto"></div>
+    <script src="Highcharts-7.1.1/code/highcharts.js"></script>
+    <script src="Highcharts-7.1.1/code/modules/series-label.js"></script>
+    <script src="Highcharts-7.1.1/code/modules/exporting.js"></script>
+    <script src="Highcharts-7.1.1/code/modules/export-data.js"></script>
 
+
+
+
+
+    <script type="text/javascript">
+        Highcharts.chart('container998', {
+            chart: {
+                type: 'area'
+            },
+            title: {
+                text: 'Historical Educational Level (Female)'
+            },
+            subtitle: {
+                text: 'Source: Government Website'
+            },
+            xAxis: {
+                categories: ['1986', '1991', '1996', '2001', '2006', '2011', '2016'],
+                tickmarkPlacement: 'on',
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Percent'
+                }
+            },
+            tooltip: {
+                pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.percentage:.1f}%</b> ({point.y:,.0f} thousands)<br/>',
+                split: true
+            },
+            plotOptions: {
+                area: {
+                    stacking: 'percent',
+                    lineColor: '#ffffff',
+                    lineWidth: 1,
+                    marker: {
+                        lineWidth: 1,
+                        lineColor: '#ffffff'
+                    }
+                }
+            },
+            series: [{
+                name: 'No schooling',
+                data: [430.9, 404.5, 371.9, 310.6, 264.6, 235.9, 199.9]
+            }, {
+                name: 'Primary',
+                data: [576.6, 547.8, 587.5, 620.9, 597.4, 569.8, 553.2]
+            }, {
+                name: 'Lower secondary',
+                data: [274.2, 281.2, 353.1, 409.1, 449.9, 466.5, 484.2]
+            }, {
+                name: 'Upper secondary',
+                data: [572.8, 735.5, 904.2, 1027.5, 1092.6, 1240.3, 1258.1]
+            }, {
+                name: 'Post-secondary - non-degree',
+                data: [111.4, 132.6, 179.3, 199.8, 237.4, 226.8, 234.7]
+            }, {
+                name: 'Post-secondary - degree',
+                data: [50.4, 85.9, 190.6, 315.4, 440.7, 585.3, 781.6]
+            }]
+        });
+    </script>
+
+    <div id="container997" style="min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto"></div>
+    <script src="Highcharts-7.1.1/code/highcharts.js"></script>
+    <script src="Highcharts-7.1.1/code/modules/series-label.js"></script>
+    <script src="Highcharts-7.1.1/code/modules/exporting.js"></script>
+    <script src="Highcharts-7.1.1/code/modules/export-data.js"></script>
+
+
+
+
+
+    <script type="text/javascript">
+        Highcharts.chart('container997', {
+            chart: {
+                type: 'area'
+            },
+            title: {
+                text: 'Historical Educational Level (Male)'
+            },
+            subtitle: {
+                text: 'Source: Government Website'
+            },
+            xAxis: {
+                categories: ['1986', '1991', '1996', '2001', '2006', '2011', '2016'],
+                tickmarkPlacement: 'on',
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Percent'
+                }
+            },
+            tooltip: {
+                pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.percentage:.1f}%</b> ({point.y:,.0f} thousands)<br/>',
+                split: true
+            },
+            plotOptions: {
+                area: {
+                    stacking: 'percent',
+                    lineColor: '#ffffff',
+                    lineWidth: 1,
+                    marker: {
+                        lineWidth: 1,
+                        lineColor: '#ffffff'
+                    }
+                }
+            },
+            series: [{
+                name: 'No schooling',
+                data: [113.4, 136.9, 120.8, 95.3, 76.5, 75.6, 58.7]
+            }, {
+                name: 'Primary',
+                data: [718, 635.5, 626.5, 575.7, 489.3, 425.8, 392]
+            }, {
+                name: 'Lower secondary',
+                data: [450.5, 434, 503.4, 525.8, 510.1, 475.4, 471.2]
+            }, {
+                name: 'Upper secondary',
+                data: [628, 738.5, 849.9, 910.9, 963, 1024.2, 975.1]
+            }, {
+                name: 'Post-secondary - non-degree',
+                data: [108.2, 130.6, 168.6, 193.3, 230.7, 228.3, 252.2]
+            }, {
+                name: 'Post-secondary - degree',
+                data: [111.2, 149.8, 273, 387.7, 480, 610.5, 760.1]
+            }]
+        });
+    </script>
+    <!--================ End Educational Level Chart 2 =================-->
+    <!--================ Start Income Chart  =================-->
+    <h>The monthly employment earnings of employed persons increased significantly in the past 3 decades, with the median monthly employment earnings rising from $2,800 in 1986 to $15,500 in 2017. In particular, the number of employed persons with monthly
+        employment earnings of $20,000 and over increased remarkably during the period. In general, the median monthly employment earnings of female employed persons was lower than that of their male counterparts. The median monthly employment earnings
+        of female employed persons was $13,000 in 2017 while that for males was $19,000. The difference could be attributed to a host of factors including the differences between female and male employed persons in respect of industrial and occupational
+        distributions, hours of work, educational attainment, working experience and nature of work.<br><br>Compared to their female counterparts, a higher proportion of male employed persons worked as managers, administrators, professionals and associate
+        professionals who had higher monthly employment earnings than other occupational groups. On the other hand, a relatively higher proportion of female employed persons was engaged in clerical support workers and elementary occupations which offered
+        relatively lower monthly employment earnings.</h>
     <div id="container2016" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -1476,149 +1627,12 @@
             }]
         });
     </script>
+    <!--================ End Income Chart  =================-->
+
     <!--================ End Educational Level Chart 1 =================-->
     <!--================ Start Educational Level Chart 2 =================-->
 
-    <div id="container998" style="min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto"></div>
-    <script src="Highcharts-7.1.1/code/highcharts.js"></script>
-    <script src="Highcharts-7.1.1/code/modules/series-label.js"></script>
-    <script src="Highcharts-7.1.1/code/modules/exporting.js"></script>
-    <script src="Highcharts-7.1.1/code/modules/export-data.js"></script>
 
-
-
-
-
-    <script type="text/javascript">
-        Highcharts.chart('container998', {
-            chart: {
-                type: 'area'
-            },
-            title: {
-                text: 'Historical Educational Level (Female)'
-            },
-            subtitle: {
-                text: 'Source: Government Website'
-            },
-            xAxis: {
-                categories: ['1986', '1991', '1996', '2001', '2006', '2011', '2016'],
-                tickmarkPlacement: 'on',
-                title: {
-                    enabled: false
-                }
-            },
-            yAxis: {
-                title: {
-                    text: 'Percent'
-                }
-            },
-            tooltip: {
-                pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.percentage:.1f}%</b> ({point.y:,.0f} thousands)<br/>',
-                split: true
-            },
-            plotOptions: {
-                area: {
-                    stacking: 'percent',
-                    lineColor: '#ffffff',
-                    lineWidth: 1,
-                    marker: {
-                        lineWidth: 1,
-                        lineColor: '#ffffff'
-                    }
-                }
-            },
-            series: [{
-                name: 'No schooling',
-                data: [430.9, 404.5, 371.9, 310.6, 264.6, 235.9, 199.9]
-            }, {
-                name: 'Primary',
-                data: [576.6, 547.8, 587.5, 620.9, 597.4, 569.8, 553.2]
-            }, {
-                name: 'Lower secondary',
-                data: [274.2, 281.2, 353.1, 409.1, 449.9, 466.5, 484.2]
-            }, {
-                name: 'Upper secondary',
-                data: [572.8, 735.5, 904.2, 1027.5, 1092.6, 1240.3, 1258.1]
-            }, {
-                name: 'Post-secondary - non-degree',
-                data: [111.4, 132.6, 179.3, 199.8, 237.4, 226.8, 234.7]
-            }, {
-                name: 'Post-secondary - degree',
-                data: [50.4, 85.9, 190.6, 315.4, 440.7, 585.3, 781.6]
-            }]
-        });
-    </script>
-    <!--================ End Educational Level Chart 2 =================-->
-    <!--================ Start Educational Level Chart 3 =================-->
-    <div id="container997" style="min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto"></div>
-    <script src="Highcharts-7.1.1/code/highcharts.js"></script>
-    <script src="Highcharts-7.1.1/code/modules/series-label.js"></script>
-    <script src="Highcharts-7.1.1/code/modules/exporting.js"></script>
-    <script src="Highcharts-7.1.1/code/modules/export-data.js"></script>
-
-
-
-
-
-    <script type="text/javascript">
-        Highcharts.chart('container997', {
-            chart: {
-                type: 'area'
-            },
-            title: {
-                text: 'Historical Educational Level (Male)'
-            },
-            subtitle: {
-                text: 'Source: Government Website'
-            },
-            xAxis: {
-                categories: ['1986', '1991', '1996', '2001', '2006', '2011', '2016'],
-                tickmarkPlacement: 'on',
-                title: {
-                    enabled: false
-                }
-            },
-            yAxis: {
-                title: {
-                    text: 'Percent'
-                }
-            },
-            tooltip: {
-                pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.percentage:.1f}%</b> ({point.y:,.0f} thousands)<br/>',
-                split: true
-            },
-            plotOptions: {
-                area: {
-                    stacking: 'percent',
-                    lineColor: '#ffffff',
-                    lineWidth: 1,
-                    marker: {
-                        lineWidth: 1,
-                        lineColor: '#ffffff'
-                    }
-                }
-            },
-            series: [{
-                name: 'No schooling',
-                data: [113.4, 136.9, 120.8, 95.3, 76.5, 75.6, 58.7]
-            }, {
-                name: 'Primary',
-                data: [718, 635.5, 626.5, 575.7, 489.3, 425.8, 392]
-            }, {
-                name: 'Lower secondary',
-                data: [450.5, 434, 503.4, 525.8, 510.1, 475.4, 471.2]
-            }, {
-                name: 'Upper secondary',
-                data: [628, 738.5, 849.9, 910.9, 963, 1024.2, 975.1]
-            }, {
-                name: 'Post-secondary - non-degree',
-                data: [108.2, 130.6, 168.6, 193.3, 230.7, 228.3, 252.2]
-            }, {
-                name: 'Post-secondary - degree',
-                data: [111.2, 149.8, 273, 387.7, 480, 610.5, 760.1]
-            }]
-        });
-    </script>
 
     <!--================ End Educational Level Chart 2 =================-->
 
