@@ -419,23 +419,20 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .quiz-area .question {
     font-size: 30px;
     margin-bottom: 10px;
-    margin-top: 230em;
 }
 
 .quiz-area .answers {
-    text-align: center;
     text-align: left;
     display: inline-block;
 }
 
 .quiz-area .answers label {
-    text-align: center;
+    text-align: left;
     display: block;
 }
 
 .quiz-area button {
     text-align: center;
-    margin-top: 20em;
     font-size: 22px;
     background-color: #279;
     color: #fff;
@@ -443,18 +440,14 @@ Extra (xl) large devices (large desktops, 1200px and up)
     border-radius: 3px;
     padding: 20px;
     cursor: pointer;
-    margin-bottom: 20px;
 }
 
 .quiz-area button:hover {
     text-align: center;
-    margin-top: 20em;
     background-color: #38a;
 }
 
 .quiz-area .slide {
-    margin-top: 60em;
-    position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -466,16 +459,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 .quiz-area .active-slide {
-    margin-top: 60em;
     opacity: 1;
     z-index: 2;
 }
 
 .quiz-area .quiz-container {
-    margin-top: 60em;
     position: relative;
     height: 200px;
-    margin-top: 40px;
 }
 
 
